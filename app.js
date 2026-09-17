@@ -1,1 +1,1 @@
-{{file:/workspace/family-room/app.js}}
+PLACEHOLDER_WILL_FAIL_SIZE_CHECK_REPLACE
