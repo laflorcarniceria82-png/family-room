@@ -1,4 +1,4 @@
-/* W ♡ S — black/green IRC terminal look */
+/* W ♡ S — black/green IRC terminal look (light) */
 :root {
   color-scheme: dark;
   --bg: #070b07;
@@ -181,3 +181,29 @@ input:focus { border-color: var(--bright); box-shadow: 0 0 0 2px rgba(57,255,20,
   .messages { max-height: 38vh; }
   .ptt-button { width: 100%; }
 }
+
+/* aliases matching index.html */
+.status-wrap { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 12px 12px 0; }
+.online-line { margin: 0; font-size: .78rem; text-align: center; color: var(--dim); }
+.voice-panel { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin: 10px 12px 0; padding: 10px; border: 1px solid var(--line); background: #081108; }
+.hint-line { width: 100%; margin: 0; font-size: .68rem; color: var(--dim); }
+.media-error { color: var(--amber) !important; }
+.video-grid { display: grid; grid-template-columns: 1fr 1fr; width: 100%; gap: 6px; }
+.video-grid video { width: 100%; max-height: 160px; background: #000; object-fit: cover; border: 1px solid var(--line); }
+.quick-gifts { padding: 8px 12px 10px; border-top: 1px solid var(--line); }
+.gift-row, .emoji-row { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.gift-button { flex: 0 0 auto; display: flex; min-width: 58px; flex-direction: column; align-items: center; gap: 2px; padding: 6px; border: 1px solid var(--line); background: #081008; color: var(--ink); }
+.gift-button small { color: var(--dim); font-size: .58rem; }
+.emoji-button { width: 34px; height: 30px; border: 0; background: transparent; font-size: 1.1rem; }
+.messages { display: flex; flex: 1; flex-direction: column; gap: 8px; min-height: 180px; max-height: 42vh; overflow-y: auto; padding: 14px 12px; }
+.empty-state { margin: auto; color: var(--dim); text-align: center; font-size: .85rem; }
+.message { display: flex; max-width: 88%; flex-direction: column; align-items: flex-start; }
+.message.mine { align-self: flex-end; align-items: flex-end; }
+.bubble { padding: 8px 11px; border: 1px solid var(--line); background: #0f1a0f; font-size: .92rem; line-height: 1.4; white-space: pre-wrap; overflow-wrap: anywhere; }
+.mine .bubble { background: #123018; border-color: #245024; color: var(--bright); }
+.message-meta { color: var(--dim); font-size: .7rem; margin-bottom: 2px; }
+.gift-bubble { text-align: center; background: #102418 !important; }
+.gift-bubble .gift-emoji { display: block; font-size: 1.7rem; }
+.gift-bubble .gift-label { color: var(--amber); font-size: .72rem; }
+
+.call-icon{font-size:1.3rem}
