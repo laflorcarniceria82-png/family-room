@@ -1,1 +1,1 @@
-PLACEHOLDER
+@/workspace/family-room/app.js
